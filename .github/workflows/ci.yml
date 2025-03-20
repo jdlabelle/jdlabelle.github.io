@@ -4,11 +4,11 @@ on:
     branches:
       - main
 
-  jobs:
-    runs-on: ubuntu-latest
-    name: Lint the markdown files
-    steps:
-      - name: Checkout the repo
-        uses: actions/checkout@v4
-      - name: Run write-good linter
-        uses: jdlabelle/write-good-action@main
+jobs:
+  runs-on: ubuntu-latest
+  name: Lint the markdown files
+  steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v4
+    - name: Run write-good linter
+      uses: jdlabelle/write-good-action@main
